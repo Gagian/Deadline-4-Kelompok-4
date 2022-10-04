@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>pelayan</h1>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>No Handphone</th>
+            <th>Alamat</th>
+            <th>Action</th>
+        </tr>
+        {%for item in allpelayanobj %}
+        <tr>
+            <td>{{ item.namapelayan }}</td>
+            <td>{{ item.notelp }}</td>
+            <td>{{ item.alamat }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
